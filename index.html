@@ -14,42 +14,42 @@
             <fieldset>
               <legend>Your face</legend>
 
-              <label for="">Your image</label>
+              <label for="">Your image: </label>
               <input type="file" name="face" required="required"/>
               <br />
 
-              <label for="">Image preview</label>
-              <img alt="" src=""  id="preview"  />
+              <label for="">Image preview: </label>
+              <img alt="" src=""  id="preview" />
 
             </fieldset>
 
             <fieldset>
               <legend>Your general details</legend>
 
-              <label for="name">Name</label>
+              <label for="name">Name: </label>
               <input type="text" name="name" id="name" required="required" />
               <br />
 
-              <label>Gender</label>
+              <label>Gender: </label>
               <input type="radio" name="gender" value="Male" id="male" required="required"/>
               <label for="male">Male</label>
               <input type="radio" name="gender" value="Female" id="female" required="required"/>
               <label for="female">Female</label>
               <br />
 
-              <label for="age">Age</label>
+              <label for="age">Age: </label>
               <input type="number" name="age" id="age" required="required" />
               <br />
 
-              <label for="birth">Date of birth</label>
+              <label for="birth">Date of birth: </label>
               <input type="date" name="birth" id="birth" />
               <br />
 
-              <label for="color">Favorite color</label>
+              <label for="color">Favorite color: </label>
               <input type="color" name="color" id="color" />
               <br />
 
-              <label for="country">Which country</label>
+              <label for="country">Which country: </label>
               <select name="country" id="country">
                 <option value="none">No selection</option>
                 <option value="france">France</option>
@@ -64,31 +64,35 @@
             <fieldset>
               <legend>Your indicators</legend>
 
-              <label for="height">Height</label>
+              <label for="height">Height: </label>
+              <label for="height">Short</label>
               <input type="range" min="0" max="100" name="height" id="height" />
+              <label for="height">Tall</label>
               <br />
 
-              <label for="salary">Salary</label>
+              <label for="salary">Salary: </label>
+              <label for="salary">Poor</label>
               <input type="range" min="0" max="100" name="salary" id="salary" />
+              <label for="salary">Rich</label>
 
             </fieldset>
 
             <fieldset>
               <legend>Your contact information</legend>
 
-              <label for="email">Email</label>
+              <label for="email">Email: </label>
               <input type="email" name="email" id="email" required="required" />
               <br />
 
-              <label for="mobile">Mobile</label>
+              <label for="mobile">Mobile: </label>
               <input type="tel" name="mobile" id="mobile" />
               <br />
 
-              <label for="address">Address</label>
+              <label for="address">Address: </label>
               <textarea name="address" id="address" ></textarea>
               <br />
 
-              <label>Method to contact you</label>
+              <label>Method to contact you: </label>
               <input type="checkbox" name="mail" id="mail" />
               <label for="mail">Email</label>
               <input type="checkbox" name="whatsapp" id="whatsapp" />
