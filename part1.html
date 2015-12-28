@@ -2,55 +2,6 @@
 <html>
     <head>
         <title>Match.com</title>
-
-        <style type="text/css">
-          fieldset {
-            background-color: lightyellow;
-            border: 10px solid yellow;
-            margin-bottom: 10px;
-            width: 720px;
-          }
-
-          label {
-            width: 180px;
-            display: inline-block;
-            text-align: right;
-            vertical-align: top;
-          }
-
-          .labelbox {
-            width: auto;
-          }
-
-          .textrange {
-            vertical-align: top;
-            text-align: center;
-            display: inline-block;
-            height: 29px;
-            width: 50px;
-          }
-
-          .low {
-            background-color: red;
-          }
-
-          .high {
-            background-color: purple;
-          }
-
-          textarea {
-            width: 360px;
-            height: 50px;
-          }
-
-          label:hover, input:hover {
-            font-size: 20px;
-          }
-
-          img {
-            height: 200px;
-          }
-        </style>
     </head>
 
     <body>
@@ -82,9 +33,9 @@
 
               <label>Gender: </label>
               <input type="radio" name="gender" value="Male" id="male" required="required"/>
-              <label for="male" class="labelbox">Male</label>
+              <label for="male">Male</label>
               <input type="radio" name="gender" value="Female" id="female" required="required"/>
-              <label for="female" class="labelbox">Female</label>
+              <label for="female">Female</label>
               <br />
 
               <label for="age">Age: </label>
@@ -115,15 +66,15 @@
               <legend>Your indicators</legend>
 
               <label for="height">Height: </label>
-              <span class="textrange low">Short</span>
+              <label for="height">Short</label>
               <input type="range" min="0" max="100" name="height" id="height" />
-              <span class="textrange high">Tall</span>
+              <label for="height">Tall</label>
               <br />
 
               <label for="salary">Salary: </label>
-              <span class="textrange low">Poor</span>
+              <label for="salary">Poor</label>
               <input type="range" min="0" max="100" name="salary" id="salary" />
-              <span class="textrange high">Rich</span>
+              <label for="salary">Rich</label>
 
             </fieldset>
 
@@ -144,11 +95,11 @@
 
               <label>Method to contact you: </label>
               <input type="checkbox" name="mail" id="mail" />
-              <label for="mail" class="labelbox">Email</label>
+              <label for="mail">Email</label>
               <input type="checkbox" name="whatsapp" id="whatsapp" />
-              <label for="whatsapp" class="labelbox">Whatsapp</label>
+              <label for="whatsapp">Whatsapp</label>Whatsapp
               <input type="checkbox" name="chat" id="chat" />
-              <label for="chat" class="labelbox">In-app chat</label>
+              <label for="chat">In-app chat</label>
               <br />
 
             </fieldset>
@@ -156,6 +107,6 @@
             <input type="submit" value="submit" />
           </form>
         </section>
-        <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
     </body>
 </html>
