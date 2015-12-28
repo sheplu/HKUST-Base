@@ -2,6 +2,47 @@
 <html>
     <head>
         <title>Match.com</title>
+
+        <style type="text/css">
+          fieldset {
+            background-color: lightyellow;
+            border: 10px solid yellow;
+            margin-bottom: 10px;
+            width: 720px;
+          }
+
+          label {
+            width: 180px;
+            display: inline-block;
+            text-align: right;
+            vertical-align: top;
+          }
+
+          .labelbox {
+            width: auto;
+          }
+
+          .textrange {
+            vertical-align: top;
+            text-align: center;
+            display: inline-block;
+            height: 29px;
+            width: 50px;
+          }
+
+          .low {
+            background-color: red;
+          }
+
+          .high {
+            background-color: purple;
+          }
+
+          textarea {
+            width: 360px;
+            height: 50px;
+          }
+        </style>
     </head>
 
     <body>
@@ -32,9 +73,9 @@
               <br />
 
               <label>Gender: </label>
-              <input type="radio" name="gender" value="Male" id="male" required="required"/>
+              <input type="radio" name="gender" value="Male" id="male" class="labelbox" required="required"/>
               <label for="male">Male</label>
-              <input type="radio" name="gender" value="Female" id="female" required="required"/>
+              <input type="radio" name="gender" value="Female" id="female" class="labelbox" required="required"/>
               <label for="female">Female</label>
               <br />
 
@@ -66,15 +107,15 @@
               <legend>Your indicators</legend>
 
               <label for="height">Height: </label>
-              <label for="height">Short</label>
+              <span class="textrange low">Short</span>
               <input type="range" min="0" max="100" name="height" id="height" />
-              <label for="height">Tall</label>
+              <span class="textrange high">Tall</span>
               <br />
 
               <label for="salary">Salary: </label>
-              <label for="salary">Poor</label>
+              <span class="textrange low">Poor</span>
               <input type="range" min="0" max="100" name="salary" id="salary" />
-              <label for="salary">Rich</label>
+              <span class="textrange high">Rich</span>
 
             </fieldset>
 
@@ -95,11 +136,11 @@
 
               <label>Method to contact you: </label>
               <input type="checkbox" name="mail" id="mail" />
-              <label for="mail">Email</label>
+              <label for="mail" class="labelbox">Email</label>
               <input type="checkbox" name="whatsapp" id="whatsapp" />
-              <label for="whatsapp">Whatsapp</label>Whatsapp
+              <label for="whatsapp" class="labelbox">Whatsapp</label>
               <input type="checkbox" name="chat" id="chat" />
-              <label for="chat">In-app chat</label>
+              <label for="chat" class="labelbox">In-app chat</label>
               <br />
 
             </fieldset>
